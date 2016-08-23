@@ -67,6 +67,32 @@ export default class FilterDoc extends Component {
         onChange={this._onChangeType} />
     );
 
+    const notInlineExclusiveWithScrollFilter = (
+      <Filter name="type" label="Operating environment" inline={false} exclusive={true}
+        choices={[
+          {label: 'Asianux 4', value: 'OS1'},
+          {label: 'CentOS 6', value: 'OS2'},
+          {label: 'CentOS 7', value: 'OS3'},
+          {label: 'Debian GNU/Linux 7.0', value: 'OS4'},
+          {label: 'Microsoft Windows Server 2008 R2', value: 'OS5'},
+          {label: 'Microsoft Windows Server 2012', value: 'OS6'},
+          {label: 'Microsoft Windows Server 2012 Essentials', value: 'OS7'},
+          {label: 'Microsoft Windows Server 2012 R2', value: 'OS8'},
+          {label: 'Red Hat Enterprise Linux 6 Server (x86-64)', value: 'OS9'},
+          {label: 'Red Hat Enterprise Linux 7 Server', value: 'OS10'},
+          {label: 'SUSE Linux Enterprise Server 11', value: 'OS11'},
+          {label: 'SUSE Linux Enterprise Server 12', value: 'OS12'},
+          {label: 'Ubuntu 12.04', value: 'OS14'},
+          {label: 'Ubuntu 14.04 LTS (x86-64)', value: 'OS15'},
+          {label: 'Ubuntu 16.04', value: 'OS16'},
+          {label: 'VMware vSphere 5.1', value: 'OS17'},
+          {label: 'VMware vSphere 5.5', value: 'OS18'},
+          {label: 'VMware vSphere 6.0', value: 'OS19'}
+        ]}
+        values={this.state.typeValues}
+        onChange={this._onChangeType} />
+    );
+
     return (
       <DocsArticle title="Filter" colorIndex="neutral-3">
 
@@ -103,6 +129,7 @@ export default class FilterDoc extends Component {
           <Example name="Inline" code={statusFilter} />
           <Example name="Not Inline" code={notInlineFilter} />
           <Example name="Not Inline, exclusive" code={notInlineExclusiveFilter} />
+          <Example name="Not Inline (showing scrollbar), exclusive" code={notInlineExclusiveWithScrollFilter} />
         </section>
 
       </DocsArticle>
