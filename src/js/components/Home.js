@@ -21,7 +21,7 @@ export default class Home extends Component {
           <h2>Hello World</h2>
 
           <p>
-            To help you get started quickly we provide the following <a href="http://codepen.io/pen?template=PNKGxN&editors=0010" target="_blank">
+            To help you get started quickly we provide the following <a href="https://codepen.io/pen?template=PNKGxN&editors=0010" target="_blank">
               CodePen
             </a> template:
           </p>
@@ -29,9 +29,9 @@ export default class Home extends Component {
             src='//codepen.io/grommet/embed/PNKGxN/?height=268&theme-id=0&default-tab=result'
             frameBorder='no' allowTransparency='true' allowFullScreen='true'
             style={{width: '100%'}}>See the Pen
-            <a href='http://codepen.io/grommet/pen/PNKGxN/'>Grommet Hello World</a>
-            by Grommet UX (<a href='http://codepen.io/grommet'>@grommet</a>) on
-            <a href='http://codepen.io'>CodePen</a>.
+            <a href='https://codepen.io/grommet/pen/PNKGxN/'>Grommet Hello World</a>
+            by Grommet UX (<a href='https://codepen.io/grommet'>@grommet</a>) on
+            <a href='https://codepen.io'>CodePen</a>.
           </iframe>
           <p>
             Also, there is a Github <a href="https://gist.github.com/grommetux/4b73162123b70103b763735c3ef58015"
