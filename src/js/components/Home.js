@@ -21,8 +21,8 @@ export default class Home extends Component {
           <h2>Hello World</h2>
 
           <p>
-            To help you get started quickly we provide the following <a href="http://codepen.io/grommet/pen/PNKGxN/" target="_blank">
-              codepen
+            To help you get started quickly we provide the following <a href="http://codepen.io/pen?template=PNKGxN&editors=0010" target="_blank">
+              CodePen
             </a> template:
           </p>
           <iframe height='268' scrolling='no'
