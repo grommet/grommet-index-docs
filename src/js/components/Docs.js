@@ -48,8 +48,9 @@ export default class Docs extends Component {
     return (
       <Title responsive={false}>
         <Link to="/">
-          <Box align="center" direction="row">
-            <GrommetLogo /> Index
+          <Box align="center" direction="row" pad={{ between: 'small' }}>
+            <GrommetLogo />
+            <span>Index</span>
           </Box>
         </Link>
       </Title>
