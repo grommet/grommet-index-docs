@@ -1,37 +1,41 @@
 // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
 import React, { Component, PropTypes } from 'react';
-import { Link } from 'react-router';
 import Menu from 'grommet/components/Menu';
-import Header from 'grommet/components/Header';
+import Box from 'grommet/components/Box';
+import Heading from 'grommet/components/Heading';
+import NavAnchor from './NavAnchor';
 
 export default class DocsMenu extends Component {
 
-  _renderLink (to, label) {
+  _renderAnchor (to, label) {
     return (
-      <Link to={to} activeClassName="active"
-        onClick={this.props.onClick}>{label}</Link>
+      <NavAnchor path={to} onClick={this.props.onClick}>{label}</NavAnchor>
     );
   }
 
   render () {
     return (
-      <Menu direction={this.props.direction} align="start" justify="between" primary={true}>
-        <Header pad={{horizontal: 'medium'}}><h3>Components</h3></Header>
-        {this._renderLink("/aggregate", "Aggregate")}
-        {this._renderLink("/filter", "Filter")}
-        {this._renderLink("/filters", "Filters")}
-        {this._renderLink("/header", "Header")}
-        {this._renderLink("/history", "History")}
-        {this._renderLink("/index", "Index")}
-        {this._renderLink("/list", "List")}
-        {this._renderLink("/sort", "Sort")}
-        {this._renderLink("/table", "Table")}
-        {this._renderLink("/tiles", "Tiles")}
-        {this._renderLink("/timestamp", "Timestamp")}
+      <Menu direction={this.props.direction} align="start" justify="between"
+        primary={true}>
+        <Box key={content.label} pad={{horizontal: 'medium'}}>
+          <Heading tag="h3" strong={true}>Components</Heading>
+        </Box>
+        {this._renderAnchor("/aggregate", "Aggregate")}
+        {this._renderAnchor("/filter", "Filter")}
+        {this._renderAnchor("/filters", "Filters")}
+        {this._renderAnchor("/header", "Header")}
+        {this._renderAnchor("/history", "History")}
+        {this._renderAnchor("/index", "Index")}
+        {this._renderAnchor("/list", "List")}
+        {this._renderAnchor("/sort", "Sort")}
+        {this._renderAnchor("/table", "Table")}
+        {this._renderAnchor("/tiles", "Tiles")}
 
-        <Header pad={{horizontal: 'medium'}}><h3>Utilities</h3></Header>
-        {this._renderLink("/query", "Query")}
+        <Box key={content.label} pad={{horizontal: 'medium'}}>
+          <Heading tag="h3" strong={true}>Utilities</Heading>
+        </Box>
+        {this._renderAnchor("/query", "Query")}
       </Menu>
     );
   }

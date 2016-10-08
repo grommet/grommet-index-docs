@@ -15,24 +15,20 @@ import QueryDoc from './components/QueryDoc';
 import SortDoc from './components/SortDoc';
 import TableDoc from './components/TableDoc';
 import TilesDoc from './components/TilesDoc';
-import TimestampDoc from './components/TimestampDoc';
 
-export default props => {
-  return (
-    <Route path="/" component={Docs}>
-      <IndexRoute component={Home} />
-      <Route path='aggregate' component={AggregateDoc} />
-      <Route path='filter' component={FilterDoc} />
-      <Route path='filters' component={FiltersDoc} />
-      <Route path='header' component={HeaderDoc} />
-      <Route path='history' component={HistoryDoc} />
-      <Route path='index' component={IndexDoc} />
-      <Route path='list' component={ListDoc} />
-      <Route path='query' component={QueryDoc} />
-      <Route path='sort' component={SortDoc} />
-      <Route path='table' component={TableDoc} />
-      <Route path='tiles' component={TilesDoc} />
-      <Route path='timestamp' component={TimestampDoc} />
-    </Route>
-  );
-};
+export default (
+  <Route path="/" component={Docs}>
+    <IndexRoute component={Home} />
+    <Route path='aggregate' component={AggregateDoc} />
+    <Route path='filter' component={FilterDoc} />
+    <Route path='filters' component={FiltersDoc} />
+    <Route path='header' component={HeaderDoc} />
+    <Route path='history' component={HistoryDoc} />
+    <Route path='index' component={IndexDoc} />
+    <Route path='list' component={ListDoc} />
+    <Route path='query' component={QueryDoc} />
+    <Route path='sort' component={SortDoc} />
+    <Route path='table' component={TableDoc} />
+    <Route path='tiles' component={TilesDoc} />
+  </Route>
+);

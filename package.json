@@ -19,22 +19,21 @@
   "dependencies": {
     "compression": "^1.4.4",
     "cookie-parser": "^1.3.4",
-    "ejs": "^0.8.5",
+    "ejs": "^2.5.2",
     "enhanced-require": "^0.4.2",
     "express": "^4.10.6",
     "grommet": "https://github.com/grommet/grommet/tarball/stable",
     "grommet-index": "https://github.com/grommet/grommet-index/tarball/stable",
     "gulp": "^3.9.0",
     "gulp-nodemon": "^2.0.3",
-    "highlight.js": "^8.8.0",
-    "history": "^1.17.0",
+    "highlight.js": "^9.7.0",
     "json-stringify-pretty-compact": "^1.0.1",
     "jsx-to-string": "^0.2.6",
     "morgan": "^1.5.0",
-    "react": "^0.14.1",
-    "react-dom": "^0.14.8",
-    "react-router": "^1.0.0-rc3",
-    "throng": "^1.0.1"
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
+    "throng": "^4.0.0"
   },
   "devDependencies": {
     "babel-loader": "^6.2.0",

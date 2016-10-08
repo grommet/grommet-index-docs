@@ -2,6 +2,7 @@
 
 import React, { Component,  PropTypes } from 'react';
 import jsxToString from 'jsx-to-string';
+import Box from 'grommet/components/Box';
 
 export default class Example extends Component {
 
@@ -13,7 +14,8 @@ export default class Example extends Component {
         keyValueOverride[override] = `this._${override}`;
       });
     }
-    return jsxToString(code, { keyValueOverride: keyValueOverride });
+    return jsxToString(code, { keyValueOverride: keyValueOverride })
+      .replace('null', 'undefined');
   }
 
   render () {
@@ -23,15 +25,15 @@ export default class Example extends Component {
       heading = <h3>{name}</h3>;
     }
     return (
-      <div>
+      <Box flex={true} pad={{horizontal: 'medium'}}>
         {heading}
-        <div className="example">
+        <Box pad={{ between: 'medium' }}>
           {code}
-        </div>
-        <pre><code className="html hljs xml">
-          {this._renderCode()}
-        </code></pre>
-      </div>
+          <pre><code className="html hljs xml">
+            {this._renderCode()}
+          </code></pre>
+        </Box>
+      </Box>
     );
   }
 }

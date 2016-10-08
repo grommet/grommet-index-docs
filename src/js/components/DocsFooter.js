@@ -7,8 +7,7 @@ export default class DocsFooter extends Component {
 
   render () {
     return (
-      <Footer colorIndex={this.props.colorIndex} centered={this.props.centered}
-        large={true} pad="large">
+      <Footer colorIndex={this.props.colorIndex} pad="large">
         {this.props.children}
         <div>
           This work is licensed under
